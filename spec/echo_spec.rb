@@ -18,6 +18,6 @@ describe Echo do
   end
 
   it 'should request input' do
-    expect(echo.request_input).to eq("Say something:")
+    expect{echo.request_input}.to output("Say something:").to_stdout
   end
 end

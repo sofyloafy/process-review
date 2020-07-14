@@ -1,6 +1,12 @@
 class Echo
+  def start
+    request_input
+    input = gets.chomp
+    output(input)
+  end
+
   def request_input
-    "Say something:"
+    print "Say something:"
   end
 
   def output(input)
