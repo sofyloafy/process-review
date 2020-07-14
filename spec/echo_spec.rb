@@ -8,4 +8,16 @@ describe Echo do
   it 'should print request for input' do
     expect(echo.output("hello, world")).to eq("#{date} | #{time} | You said: 'hello, world'!")
   end
+
+  it 'should return the date' do
+    expect(echo.date).to eq(date)
+  end
+
+  it 'should return the time' do
+    expect(echo.time).to eq(time)
+  end
+
+  it 'should request input' do
+    expect(echo.request_input).to eq("Say something:")
+  end
 end

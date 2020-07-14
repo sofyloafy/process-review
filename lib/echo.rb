@@ -1,4 +1,8 @@
 class Echo
+  def request_input
+    "Say something:"
+  end
+
   def output(input)
     "#{date} | #{time} | You said: '#{input}'!"
   end
